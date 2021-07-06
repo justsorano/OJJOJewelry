@@ -1,20 +1,15 @@
 // main // breaks
-$header: 1030;
-$main: 850; // ширина контейнера с контетом
-$lg: 1200; 
-$md:870; 
-$md2:768; // ipad
-$sm:550; // iphone 7
-$minWidth:320px;
-$maxWidth:1152; // ширина полотна
+$main: 1110px; // ширина контейнера с контетом
+$md2:768px; // ipad
+$sm:375px; // iphone 7
+$minWidth: 375px;
+$maxWidth:1920; // ширина полотна
 // font
-$fontFamily: "Heebo-VariableFont_wght";
+$fontNoto: 'NotoSerif';
+$fontGilroy: 'Gilroy';
 // colors
-$danger: #ff6464;
-$darkblue:#21243d;
-$skyblue:#00a8cc;
-$gray:#8695a4;
-$darkenblue:#142850;
-$whitegray:#e0e0e0;
-$skywhite: #edf7fa;
+$accent: #333333;
+$grey: #D6D6D6;
+$hardgrey: #979797;
+$bgc: #F9F9F9;
 
