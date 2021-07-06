@@ -171,7 +171,7 @@ a {
 
 body {
   min-width: 375px;
-  max-width: 1920;
+  max-width: 1920px;
   font-family: "Gilroy";
   color: #fff;
   background-color: transparent;
@@ -198,6 +198,7 @@ body {
 
 .screen {
   flex: 1 0 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -232,6 +233,25 @@ body {
   line-height: 133.3333333333%;
 }
 
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 35px;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)),url(.jpg);
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+  line-height: 116.6666666667%;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.link {
+  color: #fff;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -244,8 +264,86 @@ body {
   flex-direction: column;
 }
 
+.header__nav {
+  margin: 15px 0 200px 0;
+}
+
+.header__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+
+.header__h1 {
+  font-size: 36px;
+  line-height: 136.1111111111%;
+  font-size: 700;
+  font-family: "NotoSerif";
+  margin: 0 0 40px 0;
+}
+
 .nav__menu {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.nav__item:not(:nth-child(1)) {
+  margin: 0 0 0 35px;
+}
+
+.nav__item:nth-child(4) {
+  padding: 0 50px;
+}
+
+.footer_item {
+  border-right: 1px solid #fff;
+  margin: 0 15px 0 0;
+}
+
+.footer_item:last-child {
+  margin: 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer__line {
+  border-top: 1px solid #fff;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  margin: 0 0 30px 0;
+}
+
+.footer__line span::before {
+  display: block;
+  width: 130px;
+  content: "";
+  position: absolute;
+  border-top: 1px solid #fff;
+  bottom: 1px;
+  right: 1100px;
+}
+
+.footer__line span::after {
+  display: block;
+  width: 130px;
+  content: "";
+  position: absolute;
+  border-top: 1px solid #fff;
+  bottom: 1px;
+  left: 1100px;
 }
 
 @font-face {
@@ -285,3 +383,21 @@ body {
 ._icon-fb:before {
   content: "";
 }
+
+@media (min-width: 1920pxpx) {
+  .nav__item:nth-child(4) {
+    padding: 0 120px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .footer__line span::before {
+    width: 400px;
+  }
+
+  .footer__line span::after {
+    width: 400px;
+  }
+}
+
+.webp .btn { background: linear-gradient(0deg, rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)),url(.webp); }
