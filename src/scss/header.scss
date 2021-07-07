@@ -10,6 +10,12 @@
 
    &__nav {
       margin: 15px 0 200px 0;
+      @media (max-width:$sm) {
+         margin: 30px 0 200px 0;
+      }
+      @media (min-width:$lg) {
+         margin: 15px 0 500px 0;
+      }
    }
 
    &__main {
@@ -17,6 +23,9 @@
       flex-direction: column;
       align-items: center;
       margin: 0 0 50px 0;
+      @media (min-width:$lg) {
+         margin: 0 0 80px 0;
+      }
    }
 
 	&__h1 {
@@ -28,6 +37,10 @@
    }
 
    &__footer {
+      margin: 0 0 10px 0;
+      @media (min-width:$lg) {
+         margin: 0 0 30px 0;
+      }
    }
 }
 .nav {
@@ -47,22 +60,66 @@
       &:nth-child(4){
       padding: 0 50px;
       }
-      @media (min-width:$lg+px) {
+      @media (max-width:$sm) {
          &:nth-child(4){
-            padding: 0 120px;
+            margin: 0 25px 0 25px;
+            padding: 0;
+         }
+      }
+      @media (min-width:$lg) {
+         &:nth-child(4){
+            padding: 0 100px;
             }
+      }
+      @media (max-width:$sm) {
+      &:not(.logo){
+         display: none;
+      }
+      }
+   }
+   &__search{
+      margin: 0 10px 0 0;
+   }
+   &__heart{
+      &:hover{
+         color: red;
+      }
+   }
+   &__item_toggle{
+      @media (max-width:$sm) {
+         padding: 0 0 0 40px;
+      }
+      span{
+         width: 30px;
+         height: 3px;
+         content: ' ';
+         background: white;
+         margin: 3px 0 3px 0;
+         border-radius: 50px;
+         &:nth-child(2){
+         width: 17px;
+         }
+      }
+      display: none;
+      @media (max-width:$sm) {
+         display: flex;
+         flex: 1 0 auto;
+         flex-direction: column;
       }
    }
 }
 
 .footer {
+   @media (max-width:$sm) {
+      display: none;
+   }
    &_item {
       border-right: 1px solid white;
       margin: 0 15px 0 0;
+
       &:last-child{
          margin: 0;
-      }
-      img{
+         border-right: none;
       }
    }
 
@@ -79,7 +136,7 @@
       margin: 0 0 30px 0;
       span::before {
          display: block;                 
-         width:130px;                   
+         width: 130px;                   
          content: '';                    
          position: absolute;              
          border-top: 1px solid white;
@@ -91,7 +148,7 @@
       }
       span::after {
          display: block;
-         width:130px;
+         width: 130px;
          content: '';
          position: absolute;
          border-top: 1px solid white;
