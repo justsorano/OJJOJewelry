@@ -88,3 +88,18 @@ body{
       color: $hardgrey;
    }
 }
+.hoverspans{
+      :nth-child(1){
+         transform: rotate(45deg) translateY(0px) translateX(2px);
+         height: 4px;
+         transition: linear transform 80ms;
+      }
+      :nth-child(3){
+         transform: rotate(-45deg) translateY(-5px) translateX(7px);
+         height: 4px;
+         transition: linear transform 80ms;
+      }
+      :nth-child(2){
+         display: none;
+      }
+}

@@ -12,6 +12,7 @@
       margin: 15px 0 200px 0;
       @media (max-width:$sm) {
          margin: 30px 0 200px 0;
+         background: $accent;
       }
       @media (min-width:$lg) {
          margin: 15px 0 500px 0;
@@ -33,7 +34,8 @@
       line-height: 49 / 36  * 100%;
       font-size: 700;
       font-family: $fontNoto;
-      margin: 0 0 40px 0;
+      margin: 0 0 50px 0;
+      text-align: center;
    }
 
    &__footer {
@@ -86,11 +88,13 @@
       }
    }
    &__item_toggle{
+      display: none;
+      cursor: pointer;
       @media (max-width:$sm) {
-         padding: 0 0 0 40px;
+         margin: 0 0 0 40px;
       }
       span{
-         width: 30px;
+         width: 27px;
          height: 3px;
          content: ' ';
          background: white;
@@ -158,5 +162,68 @@
             width:400px;
          }
    }
+   }
+}
+// modal bar
+.modal {
+   @media (min-width:$sm) {
+      display: none;
+   }
+   position: fixed;
+   top: -1000px;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.4);
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   transition: linear top .1s;
+   &__body {
+      width: 100%;
+      height: 100%;
+      background: $accent;
+      color: white;
+   }
+   &__container{
+      margin: 0 30px 0 30px;
+   }
+   &__nav {
+      margin: 0 0 35px 0;
+   }
+
+   &__item {
+      margin: 40px 0 0 0;
+   }
+
+   &__link {   
+      color: white;
+      font-size: 21px;
+      line-height: 29 / 21 * 100%;
+   }
+
+   &__icons {
+
+      i{
+         font-size: 30px;
+         color: white;
+         margin: 0 30px 0 5px;
+         &:last-child{
+            margin: 0;
+         }
+      }
+   }
+
+   &__social {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__icon{
+      font-size: 40px;
+   }
+   hr{
+      margin: 25px 0 25px 0;
    }
 }
