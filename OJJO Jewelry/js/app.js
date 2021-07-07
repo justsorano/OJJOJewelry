@@ -37,3 +37,90 @@ toggle.addEventListener('click', function () {
     modal.style.top = '88px';
   }
 });
+var wedding = document.querySelector('.navigation__item_black');
+var linkWedding = document.querySelector('.navigation__link_black');
+var nebox = document.querySelectorAll('.navigation__item');
+var neitem = document.querySelectorAll('.navigation__link');
+var arr = [];
+var arr1 = [];
+
+for (var i = 0; i < nebox.length; i++) {
+  arr.push(nebox[i]);
+}
+
+for (var _i = 0; _i < nebox.length; _i++) {
+  arr1.push(neitem[_i]);
+}
+
+function arrayPusher(array1, array2) {
+  AaA2(arr[1], arr1[1]);
+  AaA2(arr[2], arr1[2]);
+  AaA2(arr[3], arr1[3]);
+  AaA2(arr[4], arr1[4]);
+  AaA2(arr[5], arr1[5]);
+}
+
+function AaA(box, item) {
+  box.addEventListener('mouseenter', function () {
+    if (box.classList.contains('bgcbg')) {
+      box.classList.remove('bgcbg');
+      box.classList.add('accentbg');
+    } else {
+      box.classList.remove('accentbg');
+      box.classList.add('bgcbg');
+    }
+
+    if (item.classList.contains('accentcolor')) {
+      item.classList.remove('accentcolor');
+      item.classList.add('bgccolor');
+    } else {
+      item.classList.remove('bgccolor');
+      item.classList.add('accentcolor');
+    }
+  });
+  box.addEventListener('mouseleave', function () {
+    if (box.classList.contains('bgcbg')) {
+      box.classList.remove('bgcbg');
+      box.classList.add('accentbg');
+    }
+
+    if (item.classList.contains('accentcolor')) {
+      item.classList.remove('accentcolor');
+      item.classList.add('bgccolor');
+    }
+  });
+}
+
+function AaA2(box, item) {
+  box.addEventListener('mouseenter', function () {
+    if (box.classList.contains('accentbg')) {
+      box.classList.remove('accentbg');
+      box.classList.add('bgcbg');
+    } else {
+      box.classList.remove('bgcbg');
+      box.classList.add('accentbg');
+    }
+
+    if (item.classList.contains('bgccolor')) {
+      item.classList.remove('bgccolor');
+      item.classList.add('accentcolor');
+    } else {
+      item.classList.remove('accentcolor');
+      item.classList.add('bgccolor');
+    }
+  });
+  box.addEventListener('mouseleave', function () {
+    if (box.classList.contains('accentbg')) {
+      box.classList.remove('accentbg');
+      box.classList.add('bgcbg');
+    }
+
+    if (item.classList.contains('bgccolor')) {
+      item.classList.remove('bgccolor');
+      item.classList.add('accentcolor');
+    }
+  });
+}
+
+arrayPusher(arr, arr1);
+AaA(wedding, linkWedding);

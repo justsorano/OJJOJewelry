@@ -27,6 +27,13 @@ body{
    flex: 1 0 100%;
    height: 100%;
    position: relative;
+   max-height: 600px;
+   @media (min-width:$lg) {
+      max-height: 920px;
+   }
+   @media (min-width:$md2) {
+      max-height: 920px;
+   }
 		&_bg {
          position: absolute;
          width: 100%;
@@ -34,8 +41,8 @@ body{
          top: 0;
          left: 0;
          @media (min-width:$lg) {
-            height: 920px;
             width: 1920px;
+            height: 920px;
          }
       }
 }
@@ -59,9 +66,10 @@ body{
 }
 // repetitive
 .text30{
+   font-family: $fontNoto;
    font-size: 30px;
    font-weight: 700;
-   line-height: 40 / 30  * 100%;
+   line-height: 41 / 30  * 100%;
 }
 .btn{
    display: flex;
@@ -106,4 +114,16 @@ body{
       :nth-child(2){
          display: none;
       }
+}
+.accentbg{
+   background: $accent !important;
+}
+.bgcbg{
+   background: $bgc !important;
+}
+.accentcolor{
+   color: $accent !important;
+}
+.bgccolor{
+   color: $bgc !important;
 }
