@@ -1,11 +1,12 @@
-// main // breaks
+// breaks
 $main: 1110px; // ширина контейнера с контетом
-$md2:768px; // ipad
-$sm:375px; // iphone 7
-$minWidth: 375px;
+$md2:900px; // ipad
+$md:420px; // iphone 6,7,8 plus,xs
+$sm:375px;
+$lg: 1920px; // широкие экраны
+$minWidth: 375px; // мин ширина
 $maxWidth:1920px; // ширина полотна
-$lg: 1920px;
-// font
+// fonts
 $fontNoto: 'NotoSerif';
 $fontGilroy: 'Gilroy';
 // colors

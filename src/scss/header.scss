@@ -1,3 +1,4 @@
+// header main ======================================================================================= //
 .header {
    position: absolute;
    width: 100%;
@@ -11,11 +12,13 @@
    &__nav {
       margin: 15px 0 200px 0;
       @media (max-width:$sm) {
-         margin: 30px 0 200px 0;
          background: $accent;
       }
       @media (min-width:$lg) {
          margin: 15px 0 500px 0;
+      }
+      @media (max-width:$md2) {
+         margin: 30px 0 200px 0;
       }
    }
 
@@ -45,6 +48,7 @@
       }
    }
 }
+// header nav ======================================================================================= //
 .nav {
    &__menu {
       display: flex;
@@ -73,18 +77,30 @@
             padding: 0 100px;
             }
       }
-      @media (max-width:$sm) {
+      @media (max-width:$md2) {
       &:not(.logo){
          display: none;
       }
       }
+      @media (max-width:$md2+300) {
+         &:nth-child(4){
+            padding: 0;
+            }
+         }
+         @media (max-width:$md2) {
+            &:nth-child(4){
+               margin: 0 100px 0 0;
+               }
+         }
    }
    &__search{
       margin: 0 10px 0 0;
    }
    &__heart{
-      &:hover{
-         color: red;
+      @media (min-width:$md2) {
+         &:hover{
+            color: red;
+         }
       }
    }
    &__item_toggle{
@@ -104,17 +120,16 @@
          width: 17px;
          }
       }
-      display: none;
-      @media (max-width:$sm) {
+      @media (max-width:$md2) {
          display: flex;
-         flex: 1 0 auto;
+         flex: 0 1 auto;
          flex-direction: column;
       }
    }
 }
-
+// header footer ======================================================================================= //
 .footer {
-   @media (max-width:$sm) {
+   @media (max-width:$md2+200) {
       display: none;
    }
    &_item {
@@ -164,9 +179,9 @@
    }
    }
 }
-// modal bar
+// modal bar ======================================================================================= //
 .modal {
-   @media (min-width:$sm) {
+   @media (min-width:$md2) {
       display: none;
    }
    position: fixed;
