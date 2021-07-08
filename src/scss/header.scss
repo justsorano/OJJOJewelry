@@ -219,14 +219,17 @@
    }
 
    &__icons {
-
-      i{
-         font-size: 30px;
-         color: white;
-         margin: 0 30px 0 5px;
-         &:last-child{
+      a{
+         margin: 0 20px 0 5px;
+         
+         :last-child{
             margin: 0;
          }
+      }
+      i{
+         font-size: 35px;
+         color: white;
+
       }
    }
 

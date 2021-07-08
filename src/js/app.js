@@ -15,16 +15,16 @@ const Modal = document.createElement('div');
       </nav>
 <hr/>
          <div class='modal__icons'>
-<i class="fa fa-user" aria-hidden="true"></i>
-<i class="fa fa-heart" aria-hidden="true"></i>
+         <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+         <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
          </div>
 <hr/>
          <div class='modal__social'>
-         <span class='modal__icon _icon-tube'></span>
-         <span class='modal__icon _icon-vk'></span>
-         <span class='modal__icon _icon-face'></span>
-         <span class='modal__icon _icon-tg'></span>
-         <span class='modal__icon _icon-etsy'></span>
+         <a href="#"><span class='modal__icon _icon-tube'></span></a>
+         <a href="#"><span class='modal__icon _icon-vk'></span></a>
+         <a href="#"><span class='modal__icon _icon-face'></span></a>
+         <a href="#"><span class='modal__icon _icon-tg'></span></a>
+         <a href="#"><span class='modal__icon _icon-etsy'></span></a>
          </div>
    </div>
    </div>`

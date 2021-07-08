@@ -32,7 +32,7 @@ body{
       max-height: 920px;
    }
    @media (min-width:$md2) {
-      max-height: 920px;
+      max-height: 600px;
    }
 		&_bg {
          position: absolute;
@@ -71,6 +71,10 @@ body{
    font-weight: 700;
    line-height: 41 / 30  * 100%;
 }
+.subtitle{
+   font-size: 18px;
+   line-height: 21 / 18  * 100%;
+}
 .btn{
    display: flex;
    flex-direction: row;
@@ -84,6 +88,7 @@ body{
    font-weight: 500;
    letter-spacing: .1em;
    text-transform: uppercase;
+   cursor: pointer;
 @media (min-width:$md2) {
    &:hover{
       background: $grey;
