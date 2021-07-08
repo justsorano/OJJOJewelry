@@ -117,3 +117,31 @@ function AaA2(box,item){
 }
 arrayPusher(arr,arr1)
 AaA(wedding,linkWedding)
+const arrow = document.querySelectorAll('#title')
+const ul = []
+const ul2 = [[],[],[],[]]
+for(let y = 0;y < arrow.length;y++){
+   ul.push(arrow[y].parentNode.children)
+   for(let i = 0;i < ul[y].length;i++){
+      ul2[y].push(ul[y][i])
+   }
+}
+for(let i = 0;i < ul2.length;i++){
+   ul2[i].shift()
+}
+for(let i = 0;i < arrow.length;i++){
+   arrow[i].addEventListener('click',()=>{
+   for(let u = 0;u < ul2.length;u++){
+   for(let x = 0;x < ul2[u].length;x++){
+      console.log(ul2[u][0])
+   }
+   }
+   })
+}
+// ul2[0].push(ul[0])
+// ul2[1].push(ul[1])
+// ul2[2].push(ul[2])
+// ul2[3].push(ul[3])
+// console.log(ul2)
+// console.log(ul2)
+// console.log(ul2)

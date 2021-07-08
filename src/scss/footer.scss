@@ -1,0 +1,95 @@
+.footer {
+   margin: 80px 0 0 0;
+   color: $accent;
+   &_nav {}
+
+   &__content {}
+
+   &__main {}
+
+   &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0 0 25px 0;
+      @media (max-width:$md2+50) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+      }
+
+   }
+
+   &__column {
+      flex: 1 1 25%;
+   }
+
+   &__ul {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   &__li {
+      margin: 25px 0 25px 0;
+      @media (max-width:$md2+50) {
+         width: 300px;
+         &:first-child{
+            border: none;
+         }
+         &:not(:first-child){
+            display: none;
+         }
+      }
+   &:first-child{
+      margin: 0;
+      border-bottom: 1px solid $accent;
+      padding: 0 0 15px 0;
+   }
+   &_icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+   }
+   &_bank{
+      display: flex;
+      flex-direction: row;
+   }
+   }
+
+   &__bank {
+      flex: 0 0 25%;
+      img{
+         width: 45px;
+         height: 30px;
+      }
+   }
+
+   &__footer {
+      margin: 25px 0 25px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   &__figma {
+      font-weight: 600;
+      text-decoration: underline;
+   }
+
+   &__icon{
+      
+      &::before{
+      color: $accent !important;
+      font-size: 25px !important;
+      }
+   }
+}
+.fa-phone{
+margin: 0 20px 0 0;
+}
+.fa-envelope{
+   margin: 0 20px 0 0;
+}

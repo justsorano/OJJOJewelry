@@ -124,3 +124,34 @@ function AaA2(box, item) {
 
 arrayPusher(arr, arr1);
 AaA(wedding, linkWedding);
+var arrow = document.querySelectorAll('#title');
+var ul = [];
+var ul2 = [[], [], [], []];
+
+for (var y = 0; y < arrow.length; y++) {
+  ul.push(arrow[y].parentNode.children);
+
+  for (var _i2 = 0; _i2 < ul[y].length; _i2++) {
+    ul2[y].push(ul[y][_i2]);
+  }
+}
+
+for (var _i3 = 0; _i3 < ul2.length; _i3++) {
+  ul2[_i3].shift();
+}
+
+for (var _i4 = 0; _i4 < arrow.length; _i4++) {
+  arrow[_i4].addEventListener('click', function () {
+    for (var u = 0; u < ul2.length; u++) {
+      for (var x = 0; x < ul2[u].length; x++) {
+        console.log(ul2[u][0]);
+      }
+    }
+  });
+} // ul2[0].push(ul[0])
+// ul2[1].push(ul[1])
+// ul2[2].push(ul[2])
+// ul2[3].push(ul[3])
+// console.log(ul2)
+// console.log(ul2)
+// console.log(ul2)
