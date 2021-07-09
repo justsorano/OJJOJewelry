@@ -105,7 +105,6 @@
    }
    &__item_toggle{
       display: none;
-      cursor: pointer;
       @media (max-width:$sm) {
          margin: 0 0 0 40px;
       }
@@ -124,11 +123,13 @@
          display: flex;
          flex: 0 1 auto;
          flex-direction: column;
+         cursor: pointer;
       }
    }
 }
 // header footer ======================================================================================= //
 .footer-header {
+   display: block;
    @media (max-width:$md2+200) {
       display: none;
    }
@@ -181,7 +182,7 @@
 }
 // modal bar ======================================================================================= //
 .modal {
-   @media (min-width:$md2) {
+   @media (min-width:$md2+1) {
       display: none;
    }
    position: absolute;

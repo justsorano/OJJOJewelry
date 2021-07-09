@@ -129,19 +129,18 @@ for(let y = 0;y < arrow.length;y++){
 for(let i = 0;i < ul2.length;i++){
    ul2[i].shift()
 }
-for(let i = 0;i < arrow.length;i++){
-   arrow[i].addEventListener('click',()=>{
-   for(let u = 0;u < ul2.length;u++){
-   for(let x = 0;x < ul2[u].length;x++){
-      console.log(ul2[u][0])
+if(window.innerWidth <= 950){
+   console.log(window.innerWidth)
+   for(let i = 0;i < arrow.length;i++){
+      arrow[i].addEventListener('click',()=>{
+         ul2[i].forEach(i => {
+            if(i.style.display === 'flex'){
+               i.style.display = 'none'
+            } else {
+               i.style.display = 'flex'
+            }
+         })
+      })
    }
-   }
-   })
 }
-// ul2[0].push(ul[0])
-// ul2[1].push(ul[1])
-// ul2[2].push(ul[2])
-// ul2[3].push(ul[3])
-// console.log(ul2)
-// console.log(ul2)
-// console.log(ul2)
+

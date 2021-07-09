@@ -140,18 +140,22 @@ for (var _i3 = 0; _i3 < ul2.length; _i3++) {
   ul2[_i3].shift();
 }
 
-for (var _i4 = 0; _i4 < arrow.length; _i4++) {
-  arrow[_i4].addEventListener('click', function () {
-    for (var u = 0; u < ul2.length; u++) {
-      for (var x = 0; x < ul2[u].length; x++) {
-        console.log(ul2[u][0]);
-      }
-    }
-  });
-} // ul2[0].push(ul[0])
-// ul2[1].push(ul[1])
-// ul2[2].push(ul[2])
-// ul2[3].push(ul[3])
-// console.log(ul2)
-// console.log(ul2)
-// console.log(ul2)
+if (window.innerWidth <= 950) {
+  console.log(window.innerWidth);
+
+  var _loop = function _loop(_i4) {
+    arrow[_i4].addEventListener('click', function () {
+      ul2[_i4].forEach(function (i) {
+        if (i.style.display === 'flex') {
+          i.style.display = 'none';
+        } else {
+          i.style.display = 'flex';
+        }
+      });
+    });
+  };
+
+  for (var _i4 = 0; _i4 < arrow.length; _i4++) {
+    _loop(_i4);
+  }
+}
