@@ -92,11 +92,15 @@
       border: 1px solid $grey;
       padding: 20px 0 20px 0;
       margin: 0 14px 0 0;
+      @media (min-width:$md2) {
+         &:hover{
+            background: $grey;
+         }
+      }
       &:last-child{
          margin: 0;
       }
       &_black {
-         background: $accent;
          padding-left: 35px;
          padding-right: 35px;
          @media (max-width:$sm) {
@@ -124,14 +128,7 @@
       &_wu {
          padding-left: 55px;
          padding-right: 55px;
-         @media (max-width:$sm) {
-            padding: 20px 0;
-            width: 100%;
-         }
-         @media (max-width:$md2+200) {
-            padding: 20px 0;
-            width: 100%;
-         }
+
       }
 
       &_part {
@@ -182,9 +179,6 @@
       font-weight: 500;
       letter-spacing: .1em;
       color: $accent;
-      &_black{
-         color: white;
-      }
    }
 }
 //visit

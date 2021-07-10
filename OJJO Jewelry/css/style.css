@@ -290,22 +290,6 @@ body {
   display: none;
 }
 
-.accentbg {
-  background: #333 !important;
-}
-
-.bgcbg {
-  background: #f9f9f9 !important;
-}
-
-.accentcolor {
-  color: #333 !important;
-}
-
-.bgccolor {
-  color: #f9f9f9 !important;
-}
-
 .flex {
   display: flex !important;
 }
@@ -501,6 +485,10 @@ body {
   margin: 25px 0 25px 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .category {
   margin: 100px 0 0 0;
 }
@@ -570,7 +558,6 @@ body {
 }
 
 .navigation__item_black {
-  background: #333;
   padding-left: 35px;
   padding-right: 35px;
 }
@@ -607,10 +594,6 @@ body {
   font-weight: 500;
   letter-spacing: .1em;
   color: #333;
-}
-
-.navigation__link_black {
-  color: #fff;
 }
 
 .visit {
@@ -910,6 +893,87 @@ body {
   cursor: pointer;
 }
 
+.catalog {
+  background: #fff;
+}
+
+.catalog__filter {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 0 50px 0;
+}
+
+.catalog__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.filter__row {
+  width: 100%;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Gilroy";
+  background: #fff;
+  border: none;
+  padding: 0 0 15px 0;
+  margin: 0 35px 0 0;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.filter__row:last-child {
+  margin: 0;
+}
+
+.filter__item {
+  flex: 1 1 auto;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Gilroy";
+  background: #fff;
+}
+
+.net {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.net_item {
+  flex: 1 1 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  margin: 50px 0 50px 0;
+  padding: 0 0 50px 0;
+}
+
+.net__subtitle {
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  margin: 15px 0 25px 0;
+}
+
+.net__title {
+  font-size: 24px;
+  line-height: 137.5%;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.net__price {
+  margin: 0 0 40px 0;
+}
+
+.btn {
+  background: #333;
+}
+
 @font-face {
   font-family: "icons";
   src: url("../img/iconfonts/icons.eot?t5ttak");
@@ -975,6 +1039,10 @@ body {
 
   .nav__heart:hover {
     color: red;
+  }
+
+  .navigation__item:hover {
+    background: #d6d6d6;
   }
 
   .visit__btn:hover {
@@ -1064,11 +1132,6 @@ body {
   }
 
   .navigation__item_hus {
-    padding: 20px 0;
-    width: 100%;
-  }
-
-  .navigation__item_wu {
     padding: 20px 0;
     width: 100%;
   }
@@ -1251,11 +1314,6 @@ body {
   }
 
   .navigation__item_hus {
-    padding: 20px 0;
-    width: 100%;
-  }
-
-  .navigation__item_wu {
     padding: 20px 0;
     width: 100%;
   }

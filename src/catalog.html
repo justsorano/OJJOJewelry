@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>OJJO Jewelry</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="page">
+         @@include('header.html')
+         <div class="content">
+            <section class="catalog">
+               <div class="catalog__content _container">
+                  <nav class="catalog__filter filter">
+                     <select name="Brand" id="Brand" class="filter__row">
+                        <option value="Brand" class="filter__item">Бренд</option>
+                     </select>
+                     <select name="Price" id="filter" class="filter__row">
+                        <option value="Price" class="filter__item">Цена</option>
+                     </select>
+                     <select name="Sex" id="filter" class="filter__row">
+                        <option value="Sex" class="filter__item">Для кого</option>
+                     </select>
+                     <select name="Collection" id="filter" class="filter__row">
+                        <option value="Collection" class="filter__item">Коллекция</option>
+                     </select>
+                     <select name="Season" id="filter" class="filter__row">
+                        <option value="Season" class="filter__item">Сезон</option>
+                     </select>
+                     <select name="Event" id="filter" class="filter__row">
+                        <option value="Event" class="filter__item">Событие</option>
+                     </select>
+                  </nav>
+                  <div class="catalog__net net">
+                     <div class="net_item">
+                        <img src="./img/catalog/product.jpg" alt="product">
+                        <div class="net__subtitle">Подвеска</div>
+                        <div class="net__title">Dolce &amp; Gabanna</div>
+                        <button class="net__price btn">175 000 ₽</button>
+                     </div>
+                     <div class="net_item">
+                        <img src="./img/catalog/product.jpg" alt="product">
+                        <div class="net__subtitle">Подвеска</div>
+                        <div class="net__title">Dolce &amp; Gabanna</div>
+                        <button class="net__price btn">175 000 ₽</button>
+                     </div>
+                     <div class="net_item">
+                        <img src="./img/catalog/product.jpg" alt="product">
+                        <div class="net__subtitle">Подвеска</div>
+                        <div class="net__title">Dolce &amp; Gabanna</div>
+                        <button class="net__price btn">175 000 ₽</button>
+                     </div>
+                     <div class="net_item">
+                        <img src="./img/catalog/product.jpg" alt="product">
+                        <div class="net__subtitle">Подвеска</div>
+                        <div class="net__title">Dolce &amp; Gabanna</div>
+                        <button class="net__price btn">175 000 ₽</button>
+                     </div>
+                     <div class="net_item">
+                        <img src="./img/catalog/product.jpg" alt="product">
+                        <div class="net__subtitle">Подвеска</div>
+                        <div class="net__title">Dolce &amp; Gabanna</div>
+                        <button class="net__price btn">175 000 ₽</button>
+                     </div>
+                     <div class="net_item">
+                        <img src="./img/catalog/product.jpg" alt="product">
+                        <div class="net__subtitle">Подвеска</div>
+                        <div class="net__title">Dolce &amp; Gabanna</div>
+                        <button class="net__price btn">175 000 ₽</button>
+                     </div>
+                  </div>
+                  <div class="catalog__btn">
+                     <button class="btn">покажите еще</button>
+                  </div>
+               </div>
+            </section>
+         <section class="advises">
+            <div class="advises__content _container">
+               <div class="advises__header">
+                  <div class="advises__subtitle">Полезные советы и персональный предложения</div>
+                  <h2 class="advises__title text30">Эксклюзивная рассылка</h2>
+               </div>
+               <div class="advises__links email">
+                  <nav class="email__item email__item_nav">
+                     <ul class="email__ul">
+                        <li class="email__li"><a href="#" class="email__link">Личный менеджер</a></li>
+                        <li class="email__li"><a href="#" class="email__link">Доставка и оформление</a></li>
+                        <li class="email__li"><a href="#" class="email__link">Индивидуальный дизайн</a></li>
+                     </ul>
+                  </nav>
+                  <form class="email__item email__item_form ">
+                     <input type="email" name="email" placeholder="&nbsp; &nbsp;Ваш e-mail" class="email__input">
+                     <button type="submit" class="email__btn btn">отправить</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+         </div>
+         @@include('footer.html')
+      </main>
+   </div>
+   <script src="https://kit.fontawesome.com/b687fefc4a.js" crossorigin="anonymous"></script>
+   <script src='./js/app.js'></script>
+</body>
+</html>
