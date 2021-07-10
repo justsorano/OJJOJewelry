@@ -1,16 +1,23 @@
 // header main ======================================================================================= //
 .header {
-   position: absolute;
-   width: 100%;
-   z-index: 50;
-   color: white;
+   background: white;
+   background-image: url('../img/header/bgc.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   @media (max-width:$sm+200) {
+      background-image: url('../img/header/bgc375px.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+   }
    &__content {
       display: flex;
       flex-direction: column;
    }
 
    &__nav {
-      margin: 15px 0 200px 0;
+      margin: 15px 0 0 0;
       @media (max-width:$sm) {
          background: $accent;
       }
@@ -18,7 +25,7 @@
          margin: 15px 0 500px 0;
       }
       @media (max-width:$md2) {
-         margin: 30px 0 200px 0;
+         margin: 0 0 200px 0;
       }
    }
 
@@ -26,7 +33,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 0 50px 0;
+      margin: 200px 0 50px 0;
       @media (min-width:$lg) {
          margin: 0 0 80px 0;
       }
@@ -186,7 +193,7 @@
       display: none;
    }
    position: absolute;
-   top: -1000px;
+   top: -1500px;
    bottom: 0;
    right: 0;
    left: 0;
@@ -248,4 +255,8 @@
 }
 .hidden{
    display: none;
+}
+.bgc{
+   background-image: none;
+   background: $accent;
 }

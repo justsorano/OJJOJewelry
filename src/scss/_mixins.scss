@@ -1,11 +1,11 @@
 @mixin iconfont {
    @font-face {
       font-family: 'icons';
-      src:  url('../img/iconfonts/icons.eot?t5ttak');
-      src:  url('../img/iconfonts/icons.eot?t5ttak#iefix') format('embedded-opentype'),
-        url('../img/iconfonts/icons.ttf?t5ttak') format('truetype'),
-        url('../img/iconfonts/icons.woff?t5ttak') format('woff'),
-        url('../img/iconfonts/icons.svg?t5ttak#icons') format('svg');
+      src:  url('../img/iconfonts/icons.eot?23nkkj');
+      src:  url('../img/iconfonts/icons.eot?23nkkj#iefix') format('embedded-opentype'),
+        url('../img/iconfonts/icons.ttf?23nkkj') format('truetype'),
+        url('../img/iconfonts/icons.woff?23nkkj') format('woff'),
+        url('../img/iconfonts/icons.svg?23nkkj#icons') format('svg');
       font-weight: normal;
       font-style: normal;
       font-display: block;
@@ -24,6 +24,19 @@
       -moz-osx-font-smoothing: grayscale;
     }
     
+    ._icon-delivery:before {
+      content: "\e905";
+      color: $accent;
+    }
+    ._icon-Group:before {
+      content: "\e906";
+    }
+    ._icon-jewelry:before {
+      content: "\e907";
+    }
+    ._icon-list:before {
+      content: "\e908";
+    }
     ._icon-etsy:before {
       content: "\e900";
       color: white;

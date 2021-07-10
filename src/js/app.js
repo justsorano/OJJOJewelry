@@ -35,7 +35,7 @@ const modal = document.querySelector('.modal')
    toggle.addEventListener('click',()=>{
    toggle.classList.toggle('hoverspans')
    if(modal.style.top === '88px'){
-      modal.style.top = '-1000px'
+      modal.style.top = '-1500px'
    } else {
       modal.style.top = '88px'
    }
