@@ -901,7 +901,7 @@ body {
   justify-content: center;
 }
 
-.filter__row {
+.catalog__row {
   width: 100%;
   font-size: 16px;
   line-height: 150%;
@@ -914,11 +914,11 @@ body {
   border-bottom: 1px solid #333;
 }
 
-.filter__row:last-child {
+.catalog__row:last-child {
   margin: 0;
 }
 
-.filter__item {
+.catalog__item {
   flex: 1 1 auto;
   font-size: 16px;
   line-height: 150%;
@@ -966,6 +966,63 @@ body {
   background: #333;
 }
 
+.about {
+  margin: 150px 0 0 0;
+  color: #333;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.about__desc {
+  flex: 1 0 540px;
+  margin: 0 120px 0 0;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 178.5714285714%;
+}
+
+.about__btn {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+  font-size: 18px;
+  line-height: 116.6666666667%;
+  font-size: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin: 15px 0 0 0;
+}
+
+.about__servises {
+  flex: 1 0 277px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.servises__item {
+  flex: 1 0 50%;
+  max-height: 133px;
+  margin: 0 0 25px 0;
+}
+
+.servises__icon {
+  color: #333;
+  font-size: 70px;
+}
+
+.servises__subtitle {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 50px;
+}
+
 @font-face {
   font-family: "icons";
   src: url("../img/iconfonts/icons.eot?23nkkj");
@@ -995,14 +1052,17 @@ body {
 
 ._icon-Group:before {
   content: "";
+  color: #333;
 }
 
 ._icon-jewelry:before {
   content: "";
+  color: #333;
 }
 
 ._icon-list:before {
   content: "";
+  color: #333;
 }
 
 ._icon-etsy:before {
@@ -1224,6 +1284,34 @@ body {
     padding: 25px;
     margin: 30px 0 0 0;
   }
+
+  .catalog__filter {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 10px 50px;
+  }
+
+  .catalog__row {
+    font-size: 20px;
+    padding: 10px 0 15px 10px;
+    max-width: 200px;
+  }
+
+  .catalog__item {
+    font-size: 20px;
+  }
+
+  .about {
+    margin: 30px 0 0 0;
+  }
+
+  .about__text {
+    font-size: 15px;
+  }
+
+  .about__btn {
+    margin: 15px 0 40px 0;
+  }
 }
 
 @media (max-width: 725px) {
@@ -1237,6 +1325,13 @@ body {
     grid-template-rows: 1fr;
     overflow: auto;
     margin: 50px 25px 50px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .about__content {
+    flex-direction: column;
+    margin: 0 15px;
   }
 }
 
