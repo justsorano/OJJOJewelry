@@ -4,7 +4,8 @@
    background: white;
    margin: 100px 0 0 0;
    &__content {
-
+      display: flex;
+      flex-direction: column;
    }
    &__filter {
       display: flex;
@@ -22,8 +23,7 @@
    }
 
    &__btn {
-      display: flex;
-      justify-content: center;
+      margin: 0 auto;
    }
    &__row {
       width: 100%;
@@ -63,7 +63,7 @@
    flex-flow: row wrap;
    justify-content: center;
 
-   &_item {
+   &__item {
       flex: 1 1 100/3*1%;
       display: flex;
       flex-direction: column;
@@ -94,7 +94,7 @@
    }
 }
 .btn{
-   background: $accent;
+   // background: $accent;
 }
 //about
 .about {
@@ -170,3 +170,8 @@
 
 
 
+.border{
+   .net__item{
+      border: none ;
+   }
+}

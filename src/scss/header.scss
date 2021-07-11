@@ -1,6 +1,6 @@
 // header main ======================================================================================= //
 .header {
-   background: white;
+   background: $accent;
    background-image: url('../img/header/bgc.jpg');
    background-position: center;
    background-repeat: no-repeat;
@@ -257,6 +257,21 @@
    display: none;
 }
 .bgc{
-   background-image: none;
+   background-image: none !important;
    background: $accent;
+   @media (min-width:$lg) {
+      background-image: none !important;
+      background: $accent;
+      height: 100px;
+   }
+   @media (min-width:$sm+200) {
+      background-image: none !important;
+      background: $accent;
+      height: 100px;
+   }
+   @media (min-width:$md2+200) {
+      background-image: none !important;
+      background: $accent;
+      height: 100px;
+   }
 }

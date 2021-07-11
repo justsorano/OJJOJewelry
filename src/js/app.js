@@ -41,8 +41,6 @@ const modal = document.querySelector('.modal')
    }
 })
 
-arrayPusher(arr,arr1)
-AaA(wedding,linkWedding)
 const arrow = document.querySelectorAll('#title')
 const ul = []
 const ul2 = [[],[],[],[]]
@@ -56,7 +54,6 @@ for(let i = 0;i < ul2.length;i++){
    ul2[i].shift()
 }
 if(window.innerWidth <= 950){
-   console.log(window.innerWidth)
    for(let i = 0;i < arrow.length;i++){
       arrow[i].addEventListener('click',()=>{
          ul2[i].forEach(i => {
@@ -70,3 +67,4 @@ if(window.innerWidth <= 950){
    }
 }
 
+console.log('asd')

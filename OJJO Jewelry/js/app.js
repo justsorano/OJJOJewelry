@@ -37,8 +37,6 @@ toggle.addEventListener('click', function () {
     modal.style.top = '88px';
   }
 });
-arrayPusher(arr, arr1);
-AaA(wedding, linkWedding);
 var arrow = document.querySelectorAll('#title');
 var ul = [];
 var ul2 = [[], [], [], []];
@@ -56,8 +54,6 @@ for (var _i = 0; _i < ul2.length; _i++) {
 }
 
 if (window.innerWidth <= 950) {
-  console.log(window.innerWidth);
-
   var _loop = function _loop(_i2) {
     arrow[_i2].addEventListener('click', function () {
       ul2[_i2].forEach(function (i) {
@@ -74,3 +70,5 @@ if (window.innerWidth <= 950) {
     _loop(_i2);
   }
 }
+
+console.log('asd');

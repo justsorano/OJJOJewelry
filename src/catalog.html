@@ -34,47 +34,45 @@
                         <option value="Event" class="catalog__item">Событие</option>
                      </select>
                   </nav>
-                  <div class="catalog__net net">
-                     <div class="net_item">
+                  <div class="catalog__net net @@if (context.product){border}">
+                     <div class="net__item  ">
                         <img src="./img/catalog/product.jpg" alt="product">
                         <div class="net__subtitle">Подвеска</div>
                         <div class="net__title">Dolce &amp; Gabanna</div>
                         <button class="net__price btn">175 000 ₽</button>
                      </div>
-                     <div class="net_item">
+                     <div class="net__item">
                         <img src="./img/catalog/product.jpg" alt="product">
                         <div class="net__subtitle">Подвеска</div>
                         <div class="net__title">Dolce &amp; Gabanna</div>
                         <button class="net__price btn">175 000 ₽</button>
                      </div>
-                     <div class="net_item">
+                     <div class="net__item">
                         <img src="./img/catalog/product.jpg" alt="product">
                         <div class="net__subtitle">Подвеска</div>
                         <div class="net__title">Dolce &amp; Gabanna</div>
                         <button class="net__price btn">175 000 ₽</button>
                      </div>
-                     <div class="net_item">
+                     <div class="net__item">
                         <img src="./img/catalog/product.jpg" alt="product">
                         <div class="net__subtitle">Подвеска</div>
                         <div class="net__title">Dolce &amp; Gabanna</div>
                         <button class="net__price btn">175 000 ₽</button>
                      </div>
-                     <div class="net_item">
+                     <div class="net__item">
                         <img src="./img/catalog/product.jpg" alt="product">
                         <div class="net__subtitle">Подвеска</div>
                         <div class="net__title">Dolce &amp; Gabanna</div>
                         <button class="net__price btn">175 000 ₽</button>
                      </div>
-                     <div class="net_item">
+                     <div class="net__item">
                         <img src="./img/catalog/product.jpg" alt="product">
                         <div class="net__subtitle">Подвеска</div>
                         <div class="net__title">Dolce &amp; Gabanna</div>
                         <button class="net__price btn">175 000 ₽</button>
                      </div>
                   </div>
-                  <div class="catalog__btn">
-                     <button class="btn">покажите еще</button>
-                  </div>
+                  <button class="catalog__btn btn">покажите еще</button>
                </div>
             </section>
             <section class="about">
@@ -110,7 +108,7 @@
                   </div>
                </div>
             </section>
-         <section class="advises">
+            <section class="advises">
             <div class="advises__content _container">
                <div class="advises__header">
                   <div class="advises__subtitle">Полезные советы и персональный предложения</div>
@@ -130,7 +128,7 @@
                   </form>
                </div>
             </div>
-         </section>
+            </section>
          </div>
          @@include('footer.html')
       </main>
